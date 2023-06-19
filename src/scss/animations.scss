@@ -1,0 +1,568 @@
+// Движение декор элементов
+// Анимация 1
+@keyframes decorOne {
+	0% {
+		transform: translate(0, 0);
+	}
+	25% {
+		transform: translate(1vw, 2vw);
+	}
+	50% {
+		transform: translate(2vw, 3vw);
+	}
+	75% {
+		transform: translate(3vw, 1vw);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+.decor-one-animation {
+animation-name: decorOne;
+animation-duration: 20s;
+animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+// Анимация 2
+@keyframes decorTwo {
+	0% {
+		transform: translate(0, 0);
+	}
+	25% {
+		transform: translate(-2vw, 1vw) rotate(32deg);
+	}
+	50% {
+		transform: translate(-4vw, 2vw);
+	}
+	75% {
+		transform: translate(-2vw, 4vw) rotate(-50deg);
+	}
+	90% {
+		transform: translate(-2vw, 2vw) rotate(-25deg);
+	}
+	100% {
+		transform: translate(-1vw, 1vw);
+	}
+}
+.decor-two-animation {
+	animation-name: decorTwo;
+	animation-duration: 30s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	}
+
+// Анимация 3
+@keyframes decorThree {
+	0% {
+		transform: translate(0, 0);
+	}
+	25% {
+		transform: translate(1vw, 1vw);
+	}
+	50% {
+		transform: translate(2vw, 1vw);
+	}
+	75% {
+		transform: translate(3vw, 0vw);
+	}
+	100% {
+		transform: translate(4vw, -1vw);
+	}
+}
+.decor-three-animation {
+	animation-name: decorThree;
+	animation-duration: 45s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	}
+
+// Анимация 4
+@keyframes decorFour {
+	0% {
+		transform: translate(0, 0);
+	}
+	25% {
+		transform: translate(0vw, 2vw);
+	}
+	50% {
+		transform: translate(-1vw, 1vw);
+	}
+	75% {
+		transform: translate(1vw, -1vw);
+	}
+	100% {
+		transform: translate(2vw, 2vw);
+	}
+}
+.decor-four-animation {
+	animation-name: decorFour;
+	animation-duration: 40s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	}
+
+// Анимация 5
+	@keyframes decorFive {
+		0% {
+			transform: translate(0, 0);
+		}
+		25% {
+			transform: translate(2vw, 0vw) rotate(11deg);
+		}
+		50% {
+			transform: translate(3vw, 1vw);
+		}
+		75% {
+			transform: translate(5vw, 3vw) rotate(40deg);
+		}
+		90% {
+			transform: translate(2vw, 2vw);
+		}
+		100% {
+			transform: translate(0, 0) rotate(60deg);
+		}
+	}
+	.decor-five-animation {
+		animation-name: decorFive;
+		animation-duration: 30s;
+		animation-timing-function: ease-in;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		}
+
+// Анимация 6
+	@keyframes decorSix {
+		0% {
+			transform: translate(0, 0);
+		}
+		25% {
+			transform: translate(1vw, 2vw);
+		}
+		50% {
+			transform: translate(2vw, 2vw);
+		}
+		75% {
+			transform: translate(3vw, 4vw);
+		}
+		90% {
+			transform: translate(5vw, 2vw);
+		}
+		100% {
+			transform: translate(4vw, 1vw);
+		}
+	}
+	.decor-six-animation {
+		animation-name: decorSix;
+		animation-duration: 30s;
+		animation-timing-function: ease-in;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		}
+
+// Анимация 7
+@keyframes decorSeven {
+	0% {
+		transform: translate(0, 0);
+	}
+	25% {
+		transform: translate(2vw, 1vw);
+	}
+	50% {
+		transform: translate(3vw, 2vw);
+	}
+	75% {
+		transform: translate(4vw, 1vw);
+	}
+	90% {
+		transform: translate(3vw, 2vw);
+	}
+	100% {
+		transform: translate(2vw, 0vw);
+	}
+}
+.decor-seven-animation {
+	animation-name: decorSeven;
+	animation-duration: 40s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+// Анимация бесконечного вращения (вправо)
+@keyframes rotateOne {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.rotate-one-animation {
+	animation-name: rotateOne;
+	animation-duration: 40s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+// Анимация бесконечного вращения (влево)
+@keyframes rotateTwo {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+.rotate-two-animation {
+	animation-name: rotateTwo;
+	animation-duration: 40s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+// Анимация для волн в шапке
+@keyframes oneWaveAnimation {
+	0% {
+		transform: translate(0vw);
+	}
+	100% {
+		transform: translate(-20vw);
+	}
+}
+.one-wave-animation {
+	animation-name: oneWaveAnimation;
+	animation-duration: 5s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+
+@keyframes twoWaveAnimation {
+	0% {
+		transform: translate(0vw);
+	}
+	100% {
+		transform: translate(-30vw);
+	}
+}
+.two-wave-animation {
+	animation-name: twoWaveAnimation;
+	animation-duration: 10s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+
+@keyframes threeWaveAnimation {
+	0% {
+		transform: translate(0vw);
+	}
+	100% {
+		transform: translate(-30vw);
+	}
+}
+.three-wave-animation {
+	animation-name: threeWaveAnimation;
+	animation-duration: 10s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+
+@keyframes fourWaveAnimation {
+	0% {
+		transform: translate(0vw);
+	}
+	100% {
+		transform: translate(-10vw);
+	}
+}
+.four-wave-animation {
+	animation-name: fourWaveAnimation;
+	animation-duration: 15s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+// Rhombus rotate
+@keyframes rhombusRotate {
+	0% {
+		transform: rotate(0);
+	}
+	25% {
+		transform: rotate(90deg);
+	}
+	50% {
+		transform: rotate(150deg);
+	}
+	100% {
+		transform: rotate(90deg);
+	}
+}
+.rhombus-animation {
+	animation-name: rhombusRotate;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+// Button animation
+
+@keyframes rotateButton {
+	0%{
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+	25%{
+		transform: rotate(3deg) translate3d(0, 0, 0);
+	}
+	50%{
+		transform: rotate(-3deg) translate3d(0, 0, 0);
+	}
+	75%{
+		transform: rotate(1deg) translate3d(0, 0, 0);
+	}
+	100%{
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+}
+
+.button-animation {
+	&:hover {
+		animation-name: rotateButton;
+		animation-duration: 0.4s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: both;
+	}
+}
+
+
+
+// Title line animation
+@keyframes titleLineAnimation {
+	0%{
+		width: rem(70);
+	}
+	100%{
+		width: 40%;
+	}
+}
+
+
+// Brands animation 
+@keyframes brandMove {
+	0%{
+		transform: translate(0);
+	}
+	100%{
+		transform: translate(-0.5vw );
+	}
+}
+
+.brand-animation {
+	animation-name: brandMove;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+.brand-one-animation-delay {
+	animation-delay: 0.25s;
+}
+.brand-two-animation-delay {
+	animation-delay: 0.5s;
+}
+.brand-three-animation-delay {
+	animation-delay: 0.75s;
+}
+.brand-four-animation-delay {
+	animation-delay: 1s;
+}
+
+
+// Circle translateZ
+@keyframes translateZCircle {
+	0% {
+		transform: perspective(5px) translateZ(0px);
+	}
+	100% {
+		transform: perspective(10px) translateZ(6px);
+	}
+}
+@keyframes translateZCircleTwo {
+	0% {
+		transform: perspective(5px) translateZ(0px);
+	}
+	100% {
+		transform: perspective(10px) translateZ(7px);
+	}
+}
+.circle-animation-delay-one {
+	animation-delay: 0.7s;
+}
+.circle-animation-delay-two {
+	animation-delay: 3.5s;
+}
+.circle-animation-delay-three {
+	animation-delay: 1.2s;
+}
+.circle-animation-delay-four {
+	animation-delay: 0.3s;
+}
+.circle-animation-delay-five {
+	animation-delay: 2.5s;
+}
+.circle-animation-delay-six {
+	animation-delay: 0.2s;
+}
+.circle-animation-delay-seven {
+	animation-delay: 1.4s;
+}
+.circle-z-animation-one {
+	animation-name: translateZCircle;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.circle-z-animation-two {
+	animation-name: translateZCircleTwo;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+// Support animations
+// Blue element
+@keyframes elementMax {
+	0%{
+		height: rem(428);
+		width: rem(247);
+	}
+	25% {
+		height: rem(40);
+		width: rem(300);
+	}
+	50% {
+		height: rem(428);
+		width: rem(40);
+	}
+	75% {
+		height: rem(428);
+		width: rem(247);
+	}
+}
+
+@keyframes elementMin {
+	0%{
+		height: 28.53vw;
+		width: 16.47vw;
+	}
+	25% {
+		height: 5vw;
+		width: 16.47vw;
+	}
+	50% {
+		height: 28.53vw;
+		width: 5vw;
+	}
+}
+
+.blue-element-animation {
+	@media (min-width: em(1500)){
+		animation-name: elementMax;
+	}
+	@media (max-width: em(1500)){
+		animation-name: elementMin;
+	}
+	animation-duration: 20s;
+	animation-timing-function: ease;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+.yellow-element-animation {
+	@media (min-width: em(1500)){
+		animation-name: elementMax;
+	}
+	@media (max-width: em(1500)){
+		animation-name: elementMin;
+	}
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+// Subscribe plane animation
+
+@keyframes planeAnimation {
+	0% {
+		transform: translateX(0) translateY(0);
+	}
+	100% {
+		transform: translateX(-0.90vw) translateY(0.90vw);
+	}
+}
+
+.subscribe-icon-animation {
+		animation-name: planeAnimation;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-direction: alternate;
+}
+
+@keyframes planeSecondAnimation {
+	0% {
+		transform: translateX(-0.90vw) translateY(0.90vw);
+	}
+	100% {
+		transform: translateX(20vw) translateY(-20vw);
+	}
+}
+
+.subscribe-icon-second-animation {
+	animation-name: planeSecondAnimation;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-direction: alternate;
+}
+
+@keyframes planeThirdAnimation {
+	0% {
+		transform: translateX(-3vw) translateY(3vw);
+	}
+	100% {
+		transform: translateX(0vw) translateY(0vw);
+	}
+}
+
+.subscribe-icon-third-animation {
+	animation-name: planeThirdAnimation;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-direction: alternate;
+}
+
+.bg-deep-blue {
+	transition: all 1s ease 0s;
+	background: darkblue;
+}
+.bg-hover-blue {
+	&:hover {
+		transition: all 0.3s ease 0s;
+		background: #1921ff;
+		box-shadow: 0px 10px 5px rgba(54, 58, 120, 0.1);
+	}
+}

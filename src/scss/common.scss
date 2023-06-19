@@ -1,0 +1,151 @@
+// Заголовки, загальні БЕМ блоки та інше...
+
+.main-button-style {
+	background: $orangeColor;
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: rem(26);
+	line-height: 126.9%;
+	color: $buttonTextColor;
+}
+
+.logo {
+	display: flex;
+	gap: rem(10);
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: rem(30);
+	line-height: 150%;
+	@media (max-width: em(1000)){
+		font-size: rem(25);
+	}
+
+	&__circle {
+		height: rem(35);
+		width: rem(35);
+		border-radius: 50%;
+	}
+}
+
+.margin-top-block {
+	margin-top: rem(135);
+	@media (max-width: em(1500)){
+		margin-top: 9vw;
+	}
+}
+
+.grey-orange-title {
+	font-weight: 600;
+	font-size: rem(48);
+	line-height: 147.4%;
+	letter-spacing: 0.02em;
+	column-gap: rem(13);
+	@media (max-width: em(1500)){
+		font-size: 3.2vw;
+	}
+	@media (max-width: em(900)){
+		font-size: rem(24);
+	}
+	&__grey {
+		color: #565656;
+		text-align: center;
+	}
+	&__orange {
+		color: #FFCA1D;
+	}
+}
+
+.block-text-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: rem(40);
+	@media (max-width:$mobile){
+		gap: 2.6vw;
+		width: 100%;
+	}
+	@media (max-width:$mobileSmall){
+		gap: rem(7);
+	}
+	&__title {
+		font-weight: 700;
+		font-size: rem(40);
+		line-height: 147.4%;
+		letter-spacing: 0.02em;
+		color: #4A4A4A;
+		position: relative;
+		@media (max-width: em(1500)){
+			font-size: 2.67vw;
+		}
+		@media (max-width: em(800)){
+			font-size: rem(22);
+		}
+		@media (max-width:$mobile){
+			 text-align: center;
+			 width: 100%; 
+		}
+		@media (max-width:$mobileSmall){
+			 font-size: rem(20); 
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: rem(-15);
+			left: 0;
+			width: rem(70);
+			height: rem(5);
+			border-radius: rem(5);
+			color: $orangeColor;
+			background-color: $orangeColor;
+			animation-name: titleLineAnimation;
+			animation-duration: 5s;
+			animation-timing-function: ease;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+			@media (max-width:$mobile){
+				 display: none; 
+			}
+		}
+	}
+	&__subtitle {
+		font-size: rem(24);
+		line-height: 158%;
+		letter-spacing: 0.005em;
+		color: #575757;
+		@media (max-width: em(1500)){
+			font-size: 1.67vw;
+		}
+		@media (max-width: em(1000)){
+			line-height: 140%;
+			font-size: rem(18);
+		}
+		@media (max-width:$mobile){
+			text-align: center;
+			width: 100%; 
+	 }
+		@media (max-width:$mobileSmall){
+			font-size: rem(16);
+		}
+	}
+}
+
+.container-margin-top {
+	margin-top: rem(110);
+	@media (max-width: em(1500)){
+		margin-top: 7.33vw;
+	}
+	@media (max-width:$mobile){
+		margin-top: rem(35);
+	}
+	@media (max-width:$mobileSmall){
+		margin-top: rem(20);
+	}
+	@media (max-width: em(400)){
+		margin-top: rem(10);
+	}
+}
+
+._hidden {
+	display: none;
+}
